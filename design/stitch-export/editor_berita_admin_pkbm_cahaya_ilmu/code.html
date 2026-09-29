@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary": "#7c5600", "primary-fixed-dim": "#b0c6ff", "tertiary-fixed-dim": "#ffba35", "on-primary": "#ffffff", "on-secondary-container": "#375082", "status-danger": "#DC2626", "tertiary-container": "#9c6d00", "inverse-on-surface": "#ecf1f8", "surface-container-highest": "#dee3ea", "on-primary-container": "#ffffff", "inverse-primary": "#b0c6ff", "surface-dim": "#d5dae1", "on-secondary": "#ffffff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#00429c", "on-tertiary-fixed": "#281900", "error": "#ba1a1a", "on-background": "#171c21", "outline": "#727786", "on-surface": "#171c21", "surface-variant": "#dee3ea", "error-container": "#ffdad6", "inverse-surface": "#2b3136", "on-tertiary-container": "#fffeff", "on-secondary-fixed-variant": "#2c4678", "text-muted": "#5B6B85", "on-primary-fixed": "#001945", "border": "#E3EAF5", "secondary-fixed": "#d8e2ff", "background": "#f6f9ff", "primary-dark": "#1657C4", "secondary": "#455e91", "surface-container-high": "#e3e9ef", "on-tertiary-fixed-variant": "#5f4100", "primary-fixed": "#d9e2ff", "surface-container": "#e9eef5", "status-warning": "#F59E0B", "on-secondary-fixed": "#001a42", "tertiary-fixed": "#ffdeac", "status-success": "#16A34A", "on-surface-variant": "#424654", "surface-bright": "#f6f9ff", "accent-soft": "#FFF3CC", "outline-variant": "#c2c6d7", "primary": "#0057c9", "primary-container": "#1d6ff2", "navy-deep": "#081E42", "secondary-container": "#abc3fe", "on-error": "#ffffff", "secondary-fixed-dim": "#aec6ff", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "surface-tint": "#0058cb", "text-body": "#3B4A66", "surface": "#FFFFFF", "surface-container-low": "#eff4fb" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.5rem", "space-xs": "0.25rem", "space-3xl": "4rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin-mobile": "1rem", "space-4xl": "6rem", "space-lg": "1.5rem", "space-md": "1rem", "margin": "1.5rem", "gutter-mobile": "1rem", "space-2xl": "3rem" }, fontFamily: { "display-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md-mobile": ["Plus Jakarta Sans"], "headline-sm-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"] }, fontSize: { "display-mobile": ["36px", { lineHeight: "42px", letterSpacing: "-0.01em", fontWeight: "800" }], "body-sm": ["14px", { lineHeight: "22px", fontWeight: "500" }], "headline-sm": ["20px", { lineHeight: "26px", fontWeight: "700" }], "body-md": ["16px", { lineHeight: "28px", fontWeight: "400" }], "headline-md": ["36px", { lineHeight: "44px", fontWeight: "700" }], "headline-lg-mobile": ["32px", { lineHeight: "38px", fontWeight: "800" }], "body-lg": ["18px", { lineHeight: "30px", fontWeight: "400" }], "headline-md-mobile": ["28px", { lineHeight: "34px", fontWeight: "700" }], "headline-sm-mobile": ["18px", { lineHeight: "24px", fontWeight: "700" }], "headline-lg": ["44px", { lineHeight: "52px", letterSpacing: "-0.015em", fontWeight: "800" }], "label-caps": ["12px", { lineHeight: "12px", letterSpacing: "0.08em", fontWeight: "700" }], "display": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "800" }] } } } };</script></head><body class="bg-background font-body-md text-text-body antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-navy-deep z-50 flex flex-col justify-between shadow-[0_12px_32px_rgba(8,30,66,0.22)]"><div class="flex flex-col"><div class="h-20 flex items-center gap-3 px-space-lg"><img alt="Brand logo. - Primary color: #1d6ff2
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W54ej5KwP4NQ9NZjlLPzKlIwjk-NJpDLwIUHX6zxy-sFXOc82nq0qta7Cjla0rxYPDd6fXOutZCu8GybA_JLwOFtx00aelh-eDQ3joNQTEnEWWPrAGytGqV4SIeTWFmgE7QgeRCW1q0sZ-esWvMFCA07oQORv-k66c5JwQtihnFSu8QvOU2PTL2RqyR1FjhCaZPE4j-1R-E5SBG-lamC4xtsQCLB-iV9MC0NlH1c2i4Apewk7BfSDpibk"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary leading-tight tracking-tight">Cahaya Ilmu</span><span class="font-label-caps text-label-caps text-secondary-container tracking-wider uppercase">Panel Admin</span></div></div><div class="px-space-md pt-space-sm pb-space-xs"><span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-wider px-space-sm">Menu Utama</span></div><nav class="flex flex-col gap-1 px-space-md" data-active-classes="bg-primary-container text-on-primary font-bold shadow-md rounded-xl"><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl text-secondary-fixed text-body-sm font-body-sm hover:bg-white/10 hover:text-on-primary transition-all duration-200" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Ringkasan</span></a><a aria-current="page" class="flex items-center gap-3 px-space-md py-space-sm transition-all duration-200 bg-primary-container text-on-primary font-bold shadow-md rounded-xl" data-path="berita" href="#"><span class="material-symbols-outlined text-[20px]">newspaper</span><span>Berita</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl text-secondary-fixed text-body-sm font-body-sm hover:bg-white/10 hover:text-on-primary transition-all duration-200" data-path="halaman" href="#"><span class="material-symbols-outlined text-[20px]">auto_stories</span><span>Halaman</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl text-secondary-fixed text-body-sm font-body-sm hover:bg-white/10 hover:text-on-primary transition-all duration-200" data-path="program" href="#"><span class="material-symbols-outlined text-[20px]">school</span><span>Program</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl text-secondary-fixed text-body-sm font-body-sm hover:bg-white/10 hover:text-on-primary transition-all duration-200" data-path="media" href="#"><span class="material-symbols-outlined text-[20px]">photo_library</span><span>Media</span></a><div class="my-2 h-[1px] bg-white/10 mx-space-sm"></div><span class="font-label-caps text-label-caps text-secondary-fixed-dim uppercase tracking-wider px-space-sm mb-1">Konfigurasi</span><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl text-secondary-fixed text-body-sm font-body-sm hover:bg-white/10 hover:text-on-primary transition-all duration-200" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Pengaturan</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-xl text-secondary-fixed text-body-sm font-body-sm hover:bg-white/10 hover:text-on-primary transition-all duration-200" data-path="pengguna" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Pengguna</span></a></nav></div><div class="p-space-md"><div class="bg-white/5 rounded-xl p-space-sm flex items-center justify-between gap-3"><div class="flex items-center gap-3 min-w-0"><img alt="Profile" class="w-9 h-9 rounded-full object-cover ring-2 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida/AEtjO1VmXFw1YDON9Wa57GvmZtA4PD5rprwQrSC_17wDacAij3YXYHeM2EoXcFuyVvyF5wWDLYu-AuLPwrMpMlFRIUbVrUyDggcODLrotCXvg_QJHrg9KoYoq6-7nprrr35o4CL9Fm09wn2Syyk1SZyyiYNyqkQyLzwraVCOzQX21p3ypwENc94VymmRIzPDZIt8pHeXnc-Nw36AU0XvoyHDfO1ECqwJO0cpJIzTeRxivFDvzMMxKkmvShBm2A"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-body-sm text-on-primary truncate font-bold">Admin PKBM</span><span class="font-label-caps text-[11px] text-secondary-fixed-dim truncate">Pengelola Utama</span></div></div><a class="text-secondary-fixed hover:text-status-danger p-space-xs rounded-lg transition-colors flex items-center justify-center" data-path="login" href="#" title="Keluar"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-20 bg-surface/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(8,30,66,0.06)]"><div class="h-20 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-[20px]">search</span><input class="w-full h-11 pl-10 pr-space-md rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Cari modul, siswa, atau dokumen..." type="text"/></div></div><div class="flex items-center gap-space-md"><button aria-label="Notifikasi" class="relative p-2 rounded-xl text-text-muted hover:text-primary hover:bg-surface-container-low transition-all" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-status-danger rounded-full ring-2 ring-surface"></span></button><div class="h-6 w-[1px] bg-border"></div><div class="flex items-center gap-3 pl-1"><img alt="Profile" class="w-9 h-9 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida/AEtjO1VmXFw1YDON9Wa57GvmZtA4PD5rprwQrSC_17wDacAij3YXYHeM2EoXcFuyVvyF5wWDLYu-AuLPwrMpMlFRIUbVrUyDggcODLrotCXvg_QJHrg9KoYoq6-7nprrr35o4CL9Fm09wn2Syyk1SZyyiYNyqkQyLzwraVCOzQX21p3ypwENc94VymmRIzPDZIt8pHeXnc-Nw36AU0XvoyHDfO1ECqwJO0cpJIzTeRxivFDvzMMxKkmvShBm2A"/><div class="hidden sm:flex flex-col text-left"><span class="font-body-sm text-body-sm font-bold text-on-surface leading-tight">Admin Operasional</span><span class="font-label-caps text-label-caps text-text-muted">Super Admin</span></div></div></div></div></header><main class="relative pt-20 w-full min-h-screen bg-background px-space-lg py-space-xl"><div class="flex flex-col w-full">
+<!-- Toast Floating Notification Top-Right -->
+<div class="fixed top-24 right-8 z-50 flex items-center gap-3 bg-surface-container-lowest px-space-md py-3 rounded-xl shadow-2xl transition-all duration-500 transform translate-y-0 opacity-100" id="toast-notification" style="box-shadow: 0 12px 32px rgba(11, 42, 91, 0.16);">
+<div class="w-8 h-8 rounded-full bg-status-success/15 flex items-center justify-center text-status-success shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col pr-2">
+<span class="font-headline-sm text-body-sm font-bold text-on-surface">Pemberitahuan Sistem</span>
+<span class="font-body-sm text-body-sm text-text-muted">Berita berhasil disimpan sebagai draf terbaru!</span>
+</div>
+<button aria-label="Tutup notifikasi" class="text-text-muted hover:text-on-surface p-1 rounded-lg transition-colors" onclick="document.getElementById('toast-notification').classList.add('opacity-0', '-translate-y-4', 'pointer-events-none')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Breadcrumbs & Status Header -->
+<section class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-space-lg">
+<div class="flex flex-col gap-1">
+<nav class="flex items-center gap-2 font-label-caps text-label-caps text-text-muted">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">newspaper</span>
+<span>Berita</span>
+</a>
+<span>/</span>
+<span class="text-primary font-bold">Edit Artikel</span>
+</nav>
+<div class="flex items-center gap-3 flex-wrap">
+<h1 class="font-headline-md text-headline-sm md:text-headline-md text-navy-deep font-bold tracking-tight">Edit Artikel Berita</h1>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent-soft text-tertiary-container font-label-caps text-label-caps">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+          Status: Draf Tersimpan
+        </span>
+</div>
+</div>
+<!-- Autosave Metric / Timestamp Indicator -->
+<div class="flex items-center gap-3 self-start md:self-auto bg-surface px-4 py-2 rounded-full shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[18px]" style="font-variation-settings: 'FILL' 1;">cloud_done</span>
+<span class="font-body-sm text-body-sm text-text-muted">Disimpan otomatis pada <span class="font-bold text-navy-deep">14:32 WIB</span></span>
+</div>
+<div class="w-2 h-2 rounded-full bg-status-success"></div>
+</div>
+</section>
+<!-- Two-Column Editorial Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start pb-28">
+<!-- LEFT COLUMN: Main Editorial & WYSIWYG Content (~68%) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Title Input Box Card -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-text-muted uppercase tracking-wider" for="post-title">Judul Artikel Utama</label>
+<input class="w-full bg-transparent font-headline-sm text-[22px] md:text-headline-sm text-navy-deep font-bold placeholder:text-text-muted/50 focus:outline-none transition-all py-1 leading-snug" id="post-title" placeholder="Masukkan judul artikel berita di sini..." type="text" value="Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2025/2026 Gelombang I Resmi Dibuka"/>
+<div class="flex items-center justify-between pt-2">
+<span class="font-body-sm text-xs text-text-muted">Gunakan judul yang informatif, lugas, dan menarik perhatian calon siswa PKBM.</span>
+<span class="font-label-caps text-xs text-text-muted"><span class="font-bold text-primary" id="char-counter">87</span> Karakter</span>
+</div>
+</div>
+<!-- Main Rich Text Editor Container -->
+<div class="bg-surface rounded-2xl shadow-sm flex flex-col overflow-hidden">
+<!-- WYSIWYG Sticky-Capable Toolbar Header -->
+<div class="bg-surface-container-low px-space-md py-2.5 flex items-center gap-1 flex-wrap">
+<!-- Text Headings -->
+<div class="flex items-center gap-0.5 bg-surface rounded-xl p-1 shadow-sm">
+<button class="w-8 h-8 flex items-center justify-center rounded-lg text-text-body hover:bg-surface-container hover:text-primary transition-all font-bold text-sm" title="Heading 1" type="button">H1</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg bg-primary-fixed text-primary font-bold text-sm" title="Heading 2" type="button">H2</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg text-text-body hover:bg-surface-container hover:text-primary transition-all font-bold text-sm" title="Heading 3" type="button">H3</button>
+</div>
+<!-- Divider -->
+<div class="w-px h-6 bg-surface-container-highest mx-1"></div>
+<!-- Inline Formatting -->
+<div class="flex items-center gap-0.5 bg-surface rounded-xl p-1 shadow-sm">
+<button class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container text-navy-deep hover:text-primary transition-all" title="Tebal (Bold)" type="button">
+<span class="material-symbols-outlined text-[18px]">format_bold</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg text-text-body hover:bg-surface-container hover:text-primary transition-all" title="Miring (Italic)" type="button">
+<span class="material-symbols-outlined text-[18px]">format_italic</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg text-text-body hover:bg-surface-container hover:text-primary transition-all" title="Garis Bawah (Underline)" type="button">
+<span class="material-symbols-outlined text-[18px]">format_underlined</span>
+</button>
+</div>
+<!-- Divider -->
+<div class="w-px h-6 bg-surface-container-highest mx-1"></div>
+<!-- Lists & Alignment -->
+<div class="flex items-center gap-0.5 bg-surface rounded-xl p-1 shadow-sm">
+<button class="w-8 h-8 flex items-center justify-center rounded-lg text-text-body hover:bg-surface-container hover:text-primary transition-all" title="Daftar Butir (Bullet List)" type="button">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg text-text-body hover:bg-surface-container hover:text-primary transition-all" title="Daftar Angka (Numbered List)" type="button">
+<span class="material-symbols-outlined text-[18px]">format_list_numbered</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg text-text-body hover:bg-surface-container hover:text-primary transition-all" title="Blok Kutipan" type="button">
+<span class="material-symbols-outlined text-[18px]">format_quote</span>
+</button>
+</div>
+<!-- Divider -->
+<div class="w-px h-6 bg-surface-container-highest mx-1"></div>
+<!-- Inserts & Helpers -->
+<div class="flex items-center gap-0.5 bg-surface rounded-xl p-1 shadow-sm">
+<button class="w-8 h-8 flex items-center justify-center rounded-lg text-text-body hover:bg-surface-container hover:text-primary transition-all" title="Sisipkan Tautan" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg text-text-body hover:bg-surface-container hover:text-primary transition-all" title="Sisipkan Gambar Berita" type="button">
+<span class="material-symbols-outlined text-[18px]">add_photo_alternate</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg text-text-body hover:bg-surface-container hover:text-primary transition-all" title="Garis Pemisah (Divider)" type="button">
+<span class="material-symbols-outlined text-[18px]">horizontal_rule</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg text-text-muted hover:text-status-danger hover:bg-surface-container transition-all" title="Bersihkan Format" type="button">
+<span class="material-symbols-outlined text-[18px]">format_clear</span>
+</button>
+</div>
+<!-- Auxiliary Word Count on Toolbar -->
+<div class="ml-auto hidden sm:flex items-center gap-2 pl-2">
+<span class="font-label-caps text-xs text-text-muted">Estimasi baca: <strong class="text-navy-deep">2 menit</strong></span>
+</div>
+</div>
+<!-- Editor Content Workspace Area -->
+<div class="p-space-lg md:p-8 flex flex-col gap-5 min-h-[460px] font-body-md text-text-body focus:outline-none" contenteditable="true" spellcheck="false">
+<p class="leading-relaxed">
+<strong>JAKARTA</strong> — Pusat Kegiatan Belajar Masyarakat (PKBM) Cahaya Ilmu secara resmi membuka pendaftaran Penerimaan Peserta Didik Baru (PPDB) untuk Tahun Ajaran 2025/2026 Gelombang I. Program ini mencakup pendidikan kesetaraan Paket A (setara SD), Paket B (setara SMP), dan Paket C (setara SMA) dengan kurikulum fleksibel yang mendukung pembelajar mandiri, pekerja aktif, serta pemuda putus sekolah.
+          </p>
+<h2 class="font-headline-sm text-headline-sm text-navy-deep font-bold pt-2">
+            Jadwal dan Alur Pendaftaran
+          </h2>
+<p class="leading-relaxed">
+            Pendaftaran dibuka secara daring maupun luring di sekretariat PKBM Cahaya Ilmu mulai tanggal 18 Mei hingga 30 Juni 2025. Calon peserta didik disarankan untuk mempersiapkan seluruh kelengkapan dokumen administratif sebelum tenggat waktu berakhir:
+          </p>
+<ul class="flex flex-col gap-2 pl-4">
+<li class="flex items-start gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0"></span>
+<span>Fotokopi Kartu Keluarga (KK) dan Akta Kelahiran calon siswa (2 rangkap).</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0"></span>
+<span>Salinan Ijazah jenjang sebelumnya yang telah dilegalisasi, atau Surat Keterangan Putus Sekolah resmi.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0"></span>
+<span>Pasfoto formal berwarna ukuran 3x4 latar belakang merah (4 lembar) untuk kartu ujian kesetaraan nasional.</span>
+</li>
+</ul>
+<!-- Quotation Highlight Block -->
+<div class="my-2 p-5 bg-surface-container-low rounded-2xl flex gap-4">
+<span class="material-symbols-outlined text-primary text-[32px] shrink-0">format_quote</span>
+<div class="flex flex-col gap-1.5">
+<blockquote class="italic text-navy-deep font-medium leading-relaxed">
+                “Kami berkomitmen memastikan bahwa hak memperoleh pendidikan berkualitas tidak boleh terhalang oleh batasan usia maupun kendala ekonomi. PKBM Cahaya Ilmu membuka kesempatan selebar-lebarnya melalui beasiswa pembelajar berdaya.”
+              </blockquote>
+<cite class="not-italic font-label-caps text-xs text-text-muted uppercase tracking-wider font-bold">
+                — Drs. Hendra Gunawan, M.Pd, Kepala Satuan Pendidikan PKBM Cahaya Ilmu
+              </cite>
+</div>
+</div>
+<p class="leading-relaxed">
+            Seluruh proses verifikasi berkas dan asesmen awal diagnostik tidak dipungut biaya pendaftaran (gratis). Informasi lengkap terkait alur konsultasi peminatan dapat diakses melalui portal resmi atau langsung menyapa narahubung layanan akademik via WhatsApp center.
+          </p>
+</div>
+<!-- Editor Bottom Status strip -->
+<div class="bg-surface-container-low/60 px-space-md py-2.5 flex items-center justify-between text-xs text-text-muted">
+<div class="flex items-center gap-4">
+<span>Kata: <strong class="text-navy-deep">274</strong></span>
+<span>Paragraf: <strong class="text-navy-deep">5</strong></span>
+</div>
+<div class="flex items-center gap-1.5 text-status-success font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Semua perubahan tersimpan di draf lokal</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Configuration, Meta, & Media Panel (~32%) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- KARTU 1: Publikasi & Status -->
+<div class="bg-surface rounded-2xl p-space-md shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">send_time_extension</span>
+<h2 class="font-headline-sm text-body-lg font-bold text-navy-deep">Publikasi</h2>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-text-muted font-label-caps text-xs">V2.4</span>
+</div>
+<!-- Status Radio/Toggle Switcher -->
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-xs text-text-muted uppercase tracking-wider">Status Berita</label>
+<div class="grid grid-cols-2 p-1 bg-surface-container-low rounded-xl gap-1">
+<button class="py-2 rounded-lg bg-surface text-navy-deep font-bold text-body-sm shadow-sm flex items-center justify-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-status-warning"></span>
+<span>Draf</span>
+</button>
+<button class="py-2 rounded-lg text-text-muted font-medium text-body-sm hover:text-navy-deep flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="w-2 h-2 rounded-full bg-status-success/40"></span>
+<span>Terbit</span>
+</button>
+</div>
+</div>
+<!-- Tanggal Rilis / Penjadwalan -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-xs text-text-muted uppercase tracking-wider">Jadwal Penayangan</label>
+<div class="flex items-center gap-2 px-3 py-2.5 rounded-xl bg-surface-container-low text-navy-deep font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-text-muted text-[18px]">event</span>
+<input class="bg-transparent text-navy-deep font-bold focus:outline-none w-full text-body-sm" type="text" value="18 Mei 2025, 09:00 WIB"/>
+</div>
+</div>
+<!-- Visibilitas Publik -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low/60">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-text-muted text-[20px]">public</span>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-bold text-navy-deep">Visibilitas Publik</span>
+<span class="font-body-sm text-xs text-text-muted">Dapat diakses oleh semua pembaca</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-status-success text-[20px]" style="font-variation-settings: 'FILL' 1;">toggle_on</span>
+</div>
+<!-- Quick Action Buttons for Card 1 -->
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full h-11 rounded-full bg-primary hover:bg-primary-dark text-on-primary font-bold text-body-sm transition-all shadow-md flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>Terbitkan Sekarang</span>
+</button>
+<div class="grid grid-cols-2 gap-2">
+<button class="h-10 rounded-full bg-surface-container text-navy-deep hover:bg-surface-container-high font-bold text-body-sm transition-all flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">save</span>
+<span>Simpan Draf</span>
+</button>
+<a class="h-10 rounded-full bg-primary-fixed/50 hover:bg-primary-fixed text-primary font-bold text-body-sm transition-all flex items-center justify-center gap-1" href="#" target="_blank">
+<span>Pratinjau</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- KARTU 2: Kategori & Tag -->
+<div class="bg-surface rounded-2xl p-space-md shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-2 pb-1">
+<span class="material-symbols-outlined text-primary text-[20px]">label</span>
+<h2 class="font-headline-sm text-body-lg font-bold text-navy-deep">Kategori &amp; Tagar</h2>
+</div>
+<!-- Kategori Dropdown -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-xs text-text-muted uppercase tracking-wider">Kategori Berita</label>
+<div class="relative">
+<select class="w-full h-11 px-3 py-2 rounded-xl bg-surface-container-low text-navy-deep font-bold text-body-sm appearance-none focus:outline-none focus:ring-2 focus:ring-primary/20">
+<option selected="" value="pengumuman">Pengumuman Resmi</option>
+<option value="akademik">Kegiatan Belajar &amp; Ujian</option>
+<option value="kegiatan">Prestasi &amp; Komunitas</option>
+<option value="artikel">Opini Edukasi</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-text-muted pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Tag Chips Container -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-caps text-xs text-text-muted uppercase tracking-wider">Tagar Terkait</label>
+<span class="font-body-sm text-xs text-text-muted">4 Tag Aktif</span>
+</div>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-caps text-xs font-bold">
+<span>#PPDB 2025</span>
+<button aria-label="Hapus tag PPDB 2025" class="hover:text-status-danger" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-caps text-xs font-bold">
+<span>#Kesetaraan</span>
+<button aria-label="Hapus tag Kesetaraan" class="hover:text-status-danger" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-navy-deep font-label-caps text-xs font-bold">
+<span>#Paket C</span>
+<button aria-label="Hapus tag Paket C" class="hover:text-status-danger" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-surface-container text-navy-deep font-label-caps text-xs font-bold">
+<span>#Beasiswa</span>
+<button aria-label="Hapus tag Beasiswa" class="hover:text-status-danger" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+</div>
+<!-- Add Tag Input Field -->
+<div class="flex items-center gap-2 mt-2">
+<input class="flex-1 h-9 px-3 rounded-lg bg-surface-container-low text-body-sm text-on-surface placeholder:text-text-muted focus:outline-none" placeholder="Tambah tag baru..." type="text"/>
+<button class="h-9 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-navy-deep text-body-sm font-bold transition-all" type="button">Tambah</button>
+</div>
+</div>
+</div>
+<!-- KARTU 3: Gambar Utama (Featured Image) -->
+<div class="bg-surface rounded-2xl p-space-md shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">image</span>
+<h2 class="font-headline-sm text-body-lg font-bold text-navy-deep">Gambar Utama</h2>
+</div>
+<span class="font-label-caps text-xs text-status-success font-bold">16:9 HD</span>
+</div>
+<!-- Featured Media Container with 16:9 Thumbnail -->
+<div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-sm group">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Modern Indonesian community learning center classroom where cheerful adult and youth students in clean casual attire participate in an orientation session for non-formal equivalency school, bright warm daylight through large windows, modern learning setting with books and digital tablets, captured with rich depth and warm blue tones matching #081E42 navy and #1D6FF2 blue accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMvZAgr95RsRwK9cnfqHfANi0l7aFJahGArjcCQvCbZ1j9aBDpl2wSMHHIaEVOSQ7uenmQ1YRRHP5isjiDwyTEBd_P-7G7TzX82gLRRTycGMcoMVKBz8IRFHr5JgL6V9cjvMqXaszB4f1MfxWjQt4UwX4DRMb4BY_pqKOVohQkS7xjQDKMjRUxQcyR1DPIa8MDUDo0LQwVjzB_3xGwQvVCfB601ofMfhnJUy1vRBbSye9prvmZW5Lm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-navy-deep/75 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-on-primary">
+<span class="font-label-caps text-[11px] truncate max-w-[180px]">ppdb-gelombang-1-cahaya-ilmu.jpg</span>
+<span class="font-label-caps text-[10px] bg-white/20 backdrop-blur-sm px-2 py-0.5 rounded-full">1.2 MB</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex-1 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container text-navy-deep font-bold text-body-sm transition-all flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">sync_saved_locally</span>
+<span>Ganti Gambar</span>
+</button>
+<button class="h-9 px-3 rounded-xl bg-error-container/60 hover:bg-error-container text-status-danger font-bold text-body-sm transition-all flex items-center justify-center gap-1" title="Hapus Gambar" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+<p class="font-body-sm text-xs text-text-muted">Format yang disarankan: JPG, PNG, atau WebP resolusi minimal 1280x720 piksel.</p>
+</div>
+<!-- KARTU 4: Slug URL & Snippet SEO -->
+<div class="bg-surface rounded-2xl p-space-md shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-2 pb-1">
+<span class="material-symbols-outlined text-primary text-[20px]">travel_explore</span>
+<h2 class="font-headline-sm text-body-lg font-bold text-navy-deep">Slug URL &amp; SEO</h2>
+</div>
+<!-- Slug Input Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-xs text-text-muted uppercase tracking-wider">Permalink / Slug</label>
+<div class="flex items-center rounded-xl bg-surface-container-low px-3 py-2">
+<span class="font-body-sm text-xs text-text-muted shrink-0 pr-1">/berita/</span>
+<input class="w-full bg-transparent text-navy-deep font-bold text-body-sm focus:outline-none font-mono text-xs" type="text" value="penerimaan-peserta-didik-baru-2025-gelombang-1"/>
+</div>
+</div>
+<!-- Google SERP Snippet Box -->
+<div class="flex flex-col gap-1 p-3.5 rounded-xl bg-surface-container-low">
+<span class="font-label-caps text-[10px] uppercase text-text-muted font-bold tracking-widest">Pratinjau Snippet Google</span>
+<span class="text-xs text-[#1a0dab] truncate font-bold hover:underline cursor-pointer">
+            Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2025/2026 Gelombang I...
+          </span>
+<span class="text-[11px] text-[#006621] truncate font-mono">
+            https://cahayailmu.sch.id/berita/penerimaan-peserta-didik-baru-2025...
+          </span>
+<p class="text-[12px] text-text-muted line-clamp-2 leading-relaxed pt-0.5">
+            Pusat Kegiatan Belajar Masyarakat (PKBM) Cahaya Ilmu resmi membuka pendaftaran peserta didik kesetaraan Paket A, Paket B, dan Paket C...
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- STICKY BOTTOM ACTION BAR -->
+<footer class="fixed bottom-0 left-[260px] right-0 z-40 bg-surface/95 backdrop-blur-xl px-space-lg py-3 shadow-[0_-8px_24px_rgba(8,30,66,0.08)] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<a class="h-10 px-4 rounded-full bg-surface-container text-navy-deep hover:bg-surface-container-high font-bold text-body-sm transition-all flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="hidden sm:inline">Kembali ke Daftar</span>
+</a>
+<button class="h-10 px-3.5 rounded-full text-status-danger hover:bg-error-container/40 font-bold text-body-sm transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">delete_sweep</span>
+<span class="hidden md:inline">Buang Perubahan</span>
+</button>
+</div>
+<!-- Active publication buttons -->
+<div class="flex items-center gap-3">
+<button class="h-10 px-5 rounded-full bg-surface text-navy-deep hover:bg-surface-container-low font-bold text-body-sm shadow-sm transition-all flex items-center gap-2" onclick="document.getElementById('toast-notification').classList.remove('opacity-0', '-translate-y-4', 'pointer-events-none')" type="button">
+<span class="material-symbols-outlined text-status-warning text-[18px]">bookmark</span>
+<span>Simpan Draf</span>
+</button>
+<button class="h-11 px-7 rounded-full bg-primary hover:bg-primary-dark text-on-primary font-bold text-body-sm shadow-md transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Terbitkan Berita (Aktif)</span>
+</button>
+</div>
+</footer>
+<script>
+    // Simple micro-interactions: character counter & toast autohide
+    const titleInput = document.getElementById('post-title');
+    const charCounter = document.getElementById('char-counter');
+    if (titleInput && charCounter) {
+      titleInput.addEventListener('input', (e) => {
+        charCounter.textContent = e.target.value.length;
+      });
+    }
+
+    // Auto fade toast after 6 seconds
+    setTimeout(() => {
+      const toast = document.getElementById('toast-notification');
+      if (toast) {
+        toast.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+      }
+    }, 6000);
+  </script>
+</div></main></div></body></html>
